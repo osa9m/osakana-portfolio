@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Osakana Portfolio</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Osakana Portfolio</h1>
+		<p class="sub-title">-Thankyou fot vising-</p>
+		<ul class="header-menu">
+			<li class="menu-contents"><a href="#profile"><i class="fas fa-user-circle"></i> PROFILE</a></li>
+			<li class="menu-contents"><a href="#skill"><i class="fas fa-book-open"></i> SKILL</a></li>
+			<li class="menu-contents"><a href="#works"><i class="fas fa-laptop"></i> WORKS</a></li>
+			<li class="menu-contents"><a href="#contact"><i class="far fa-smile"></i> CONTACT</a></li>
+		</ul>
+	</header>
+	<section id="profile">
+		<h2><i class="fas fa-user-circle"></i> PROFILE</h2>
+		<img src="img/profile.png" alt="プロフィール画像" class="profile-img">
+		<h3>おさかな / osakana</h3>
+		<p class="profile-p">
+			おさかな / osakana と申します。<br>
+			00年生まれの19歳。<br>
+			高校生の頃からプログラミングを勉強しはじめ、現在は簡単な<br>Webサイトを作成することができます。<br>
+			また、「ライター」として「クラウドソーシングサービス」でのお仕事<br>経験もあります。<br>
+			今後は、個人での「Webサイト作成」と「ブログ運営」に力を入<br>れていく予定です。<br>
+	 	</p>
+	 	<h2 id="skill"><i class="fas fa-book-open"></i> SKILL</h2>
+	 	<ul class="graf">
+		    <li style="background:#87ceeb;width:95%;">HTML<span>95%</span></li>
+		    <li style="background:#ffff66;width:80%;">CSS<span>80%</span></li>
+		    <li style="background:#87ceeb;width:60%;">JavaScript<span>60%</span></li>
+		    <li style="background:#ffff66;width:45%;">PHP<span>45%</span></li>
+		</ul>
+	</section>
+	<section id="works">
+		<h2><i class="fas fa-laptop"></i> WORKS</h2>
+		<h3>今までに作成したもの</h3>
+		<a href="https://osakanaportfolioproject.firebaseapp.com/index.html" target="_blank" class="btn-gradient-3d-simple">旧ポートフォリオサイト</a>
+		<a href="https://omikujiproject-11a8a.firebaseapp.com/" target="_blank" class="btn-gradient-3d-simple">今日のご飯は何にする？</a>
+		<h3>運営中のブログ</h3>
+		<a href="https://osakanav.com/" target="_blank" class="btn-gradient-3d-simple">おさかなび-osakanav-</a>
+		<a href="https://note.com/osmomo_neo16sb" target="_blank" class="btn-gradient-3d-simple">note</a>
+	</section>
+	<footer id="contact">
+		<h2><i class="far fa-smile"></i> CONTACT</h2>
+		<a href = "https://github.com/osa9m" target = "_blank">
+			 <i class="fab fa-github fa-3x" style = "padding:50px; color: #fff;"></i>
+		</a>
+		<a href = "mailto:osakana1699@gmail.com" target="_blank">
+			<i class="far fa-envelope fa-3x glyphicon glyphicon-adjust white"  style = "padding:50px; color: #fff;"></i>
+		</a>
+		<p>&copy;2019 Osakana Portfolio.com</p>
+	</footer>
+	<script>
+		'use strict';
+	    $(function() {
+	        $('a[href^="#"]').click(function() {
+		var speed = 400;
+		var href = $(this).attr("href");
+		var target = $(href == "#" || href == "" ? 'html' :href);
+		var position = target.offset().top;
+		$('body,html').animate({scrollTop:position}, position, 'swing');
+	        return false;
+	       });
+	    });
+ </script>
+</body>
+</html>
